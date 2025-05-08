@@ -1,0 +1,100 @@
+@import "tailwindcss";
+@import "@fontsource/inter";
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+
+
+.red-hat-display{
+  font-family: "Red Hat Display", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+.title {
+  font-family: 'Anton', sans-serif;
+  font-size: 80px;
+  color: white;
+  background: linear-gradient(to bottom, #ffffff, #cccccc);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow:
+    2px 2px 0 #ff00cc,
+    4px 4px 0 #ff6600;
+}
+
+
+
+.bungee-regular {
+  font-family: "Bungee", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+
+
+
+.loader {
+  width: 80px;
+  height: 80px;
+  position: relative;
+  margin: 0 auto;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border: 2px solid;
+  border-radius: 50%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: pulse 1s infinite ease-in-out;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 0.6;
+    border-color: #ff4da6;
+  }
+  50% {
+    transform: scale(1.5);
+    opacity: 1;
+    border-color: #ffffff;
+  }
+}
+
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #1a1a1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #f97316;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #ea580c;
+}
+
+/* Smooth transitions */
+body {
+  transition: background-color 0.3s ease;
+}
