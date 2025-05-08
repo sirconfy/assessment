@@ -1,36 +1,30 @@
 @import "tailwindcss";
 @import "@fontsource/inter";
-@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap");
 
+@import url("https://fonts.googleapis.com/css2?family=Bungee&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Trade+Winds&display=swap");
 
 body {
   font-family: "Inter", sans-serif;
 }
 
-
-
-.red-hat-display{
+.red-hat-display {
   font-family: "Red Hat Display", sans-serif;
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
 }
 
-
 .title {
-  font-family: 'Anton', sans-serif;
+  font-family: "Anton", sans-serif;
   font-size: 80px;
   color: white;
   background: linear-gradient(to bottom, #ffffff, #cccccc);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  text-shadow:
-    2px 2px 0 #ff00cc,
-    4px 4px 0 #ff6600;
+  text-shadow: 2px 2px 0 #ff00cc, 4px 4px 0 #ff6600;
 }
-
-
 
 .bungee-regular {
   font-family: "Bungee", sans-serif;
@@ -38,10 +32,11 @@ body {
   font-style: normal;
 }
 
-
-
-
-
+.trade-winds-regular {
+  font-family: "Trade Winds", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
 
 .loader {
   width: 80px;
@@ -63,7 +58,8 @@ body {
 }
 
 @keyframes pulse {
-  0%, 100% {
+  0%,
+  100% {
     transform: scale(1);
     opacity: 0.6;
     border-color: #ff4da6;
@@ -74,7 +70,6 @@ body {
     border-color: #ffffff;
   }
 }
-
 
 /* Custom scrollbar */
 ::-webkit-scrollbar {

@@ -8,6 +8,9 @@ import SignIn from "./pages/autPages/SignIn";
 import Layout from "./components/layout/Layout";
 import Home from "./pages/home/Home";
 import Onboarding from "./pages/autPages/Onboarding";
+import KickTrivia from "./pages/trivia/KickTrivia";
+import TriviaCup from "./pages/trivia/TriviaCup";
+import AvatarSelector from "./pages/trivia/Avatar";
 
 
 
@@ -23,7 +26,13 @@ function App() {
          <Route path="/onboarding" element={<Onboarding  />} />
          <Route element={<Layout />}>
          <Route path="/home" element={<Home />} />
+          <Route path="/kick-trivia" element={<KickTrivia/>} />
+          <Route path="/kick-trivia/trivia-cup" element={<TriviaCup/>} />
+          <Route path="/kick-trivia/avatar" element={<AvatarSelector/>} />
+          
 
+
+          
          </Route>
         
       </Routes>
